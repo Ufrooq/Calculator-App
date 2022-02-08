@@ -28,22 +28,26 @@ export default function Calculator() {
     }
     return (
         <div className="container-fluid">
-            <div className="calculator">
-                <div className="display">
-                    <input type="text" id='number' placeholder='0' value={result} />
-                </div>
-                <div className="operators">
-                    <button onClick={handleClick} value="+">+</button>
-                    <button onClick={handleClick} value="-">-</button>
-                    <button onClick={handleClick} value="/">/</button>
-                    <button onClick={handleClick} value="*">*</button>
-                    <button onClick={clearDisplay}>DEL</button>
-                </div>
-                <div className="digits">
-                    {createDigits()}
-                    <button onClick={handleClick} value="0">0</button>
-                    <button onClick={handleClick} value=".">.</button>
-                    <button onClick={calcNumbers}>=</button>
+            <div className="row justify-content-center">
+                <div className="col">
+                    <div className="calculator">
+                        <div className="display">
+                            <input type="text" id='number' placeholder='0' value={result} />
+                        </div>
+                        <div className="operators">
+                            <button onClick={handleClick} value="+">+</button>
+                            <button onClick={handleClick} value="-">-</button>
+                            <button onClick={handleClick} value="/">/</button>
+                            <button onClick={handleClick} value="*">*</button>
+                            <button onClick={clearDisplay}>DEL</button>
+                        </div>
+                        <div className="digits">
+                            {createDigits()}
+                            <button onClick={handleClick} value="0">0</button>
+                            <button onClick={handleClick} value=".">.</button>
+                            <button onClick={calcNumbers}>=</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
