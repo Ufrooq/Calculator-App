@@ -8,7 +8,7 @@ export default function Calculator() {
         setResult(`${result}${e.target.value}`);
     }
 
-    const clearDisplay = (e) => {
+    const clearDisplay = () => {
         setResult("");
     }
 
