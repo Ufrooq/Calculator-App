@@ -1,0 +1,88 @@
+.input{
+    border:  2px solid rgb(63, 6, 6);
+    padding: 15px
+}
+
+.input2{
+    border:  2px solid rgb(63, 6, 6);
+    padding: 15px
+}
+
+.container-fluid{
+    height: 100vh;
+}
+.calculator{
+    width: 100%;
+    margin-left: 33%;
+    margin-top: 10%;
+    overflow: hidden;
+    max-width: 400px;
+    /* border: 2px solid greenyellow; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+border-radius: 30px 30px 10px 10px;
+color: white;
+
+}
+
+
+.display{
+    padding: 22px;
+    background-color: #0e2731;
+    /* max-width: 800px; */
+text-align: right;
+font-weight: bold;
+font-size: 20px;
+color: white;
+
+}
+#number{
+    font-size: 20px;
+    padding: 4px;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    background: #0e2731;
+    width: 150px;
+    border:1px solid #0e2731;
+}
+
+
+.operators{
+  display: flex;
+}
+button{
+    padding: 16px;
+    border: none;
+    background-color: #0e2731;
+    font-weight: bold;
+color: white;
+}
+.operators button{
+    padding: 16px;
+    border: none;
+    background-color: rgb(218, 16, 100);
+    flex: auto;
+    color: white;
+    font-weight: bold;
+}
+.operators button:hover{
+    padding: 16px;
+    border: none;
+    background-color: rgb(173, 0, 72);
+    flex: auto;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+.digits{
+    display: flex;
+      flex-wrap:wrap;
+}
+
+.digits button{
+flex: 1 1 33.33%;
+}
